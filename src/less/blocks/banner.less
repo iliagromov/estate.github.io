@@ -1,0 +1,40 @@
+.banner {
+    position: relative;
+    min-height: 612px;
+    background-image: url('../assets/img/img-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    text-align: center;
+    color:@color_white;
+  
+    &-block{
+        position: relative;
+        min-height: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .page__title-h1{
+            .size(9);
+            .size-sm(12);
+            margin: 0 auto;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+        }
+        .page__text{
+            .size(4.5);
+            .size-sm(12);
+            margin: 0 auto;
+            padding-bottom: 30px;
+            color:@color_gray-f5;
+        }
+        .page__btn{
+            .size(3.5);
+            .size-ssm(6);
+            .size-xs(12);
+            margin: 0 auto;
+        }
+    }
+}

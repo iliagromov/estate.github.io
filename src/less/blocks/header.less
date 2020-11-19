@@ -1,0 +1,33 @@
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding: 20px 0;
+    align-items: center;
+    &-block{
+        .row-flex();
+        align-items: center;
+        justify-content: space-between;
+        .page__btn{
+            width: 61px;
+            height: 61px;
+            background-color: #ffffff;
+            border: 3px solid #20ce6d;
+            border-radius: 0;
+            &:hover{
+                background-color: transparent;
+            }
+        }
+        &__key{
+            .sprite(@icon-key);
+            
+        }
+        &__mail{
+            .page__link{
+                color: @color_white;
+            }
+        }
+        
+    }
+    
+}

@@ -1,0 +1,56 @@
+.services {
+    background-color: @color_gray-f5;
+    padding: 70px 0;
+
+    .page__title-h2{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .page__text{
+        padding-bottom: 40px;
+    }
+    
+    &-block{
+        .row-flex();
+      
+       
+        &__item{
+            .col();
+            .size(3);
+            .size-sm(6);
+            .size-xs(12);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .icon{
+                width: 105px;
+                height: 105px;
+                border-radius: 100%;
+                background-color: #ffffff;
+                border: 2px solid #20ce6d;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &_bedrooms{
+                    .sprite(@icon-bad);
+                }
+                &_bathrooms{
+                    .sprite(@icon-shower);
+                }
+                &_garage{
+                    .sprite(@icon-tech-services);
+                }
+                &_triangle{
+                    .sprite(@icon-triangle);
+                }
+            }
+            .page__title-h3{
+                padding-top: 20px;
+            }
+        }
+    }
+    
+}

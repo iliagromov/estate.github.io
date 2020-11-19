@@ -1,0 +1,17 @@
+mixin item(icon, title, subtext)
+    .feature-block__item
+        .icon
+            div(class=icon)
+        h3.page__title-h3=title
+        span.page__text=subtext
+
+section.feature
+    .wrapper
+        h2.page__title-h2 feature for transport
+        p.page__text Vivamus elementum semper nisi aenean vulputate eleifend tellus aenean leo ligulal porttitor.
+        .feature-block
+            +item('icon_houses', '2.5 km', 'Transport Available')
+            +item('icon_basket', '0.6 km', 'Walkless Distance')
+            +item('icon_garage ', '3.5 km', 'Transport Available')
+            +item('icon_stadium', '3.4 km', 'Walkless Distance')
+            +item('icon_services', '1.0 km', 'Walkless Distance')

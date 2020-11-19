@@ -1,0 +1,16 @@
+mixin item(img, title, subtext)
+    .agents-block__item
+        .page__img
+            img(src=img, alt="s")
+        h3.page__title-h3=title
+        span.page__text=subtext
+
+section.agents
+        h2.page__title-h2 our real estate Agents
+        p.page__text Vivamus elementum semper nisi aenean vulputate eleifend tellus aenean leo ligulal porttitor.
+        .wrapper
+            .agents-block
+                +item('assets/img/img-agent-1.jpg', 'Clay Hamilton', 'Real Estate Agent')
+                +item('assets/img/img-agent-2.jpg', 'Sabrina Pecoraro', 'Selling Agent')
+                +item('assets/img/img-agent-3.jpeg', 'Stone Lawrence', 'Real Estate Broker')
+                +item('assets/img/img-agent-4.jpg', 'Bailey Wonger', 'Buying Real Estate')

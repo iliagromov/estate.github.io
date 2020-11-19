@@ -1,0 +1,318 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@icon-bad-name: 'icon-bad';
+@icon-bad-x: 100px;
+@icon-bad-y: 115px;
+@icon-bad-offset-x: -100px;
+@icon-bad-offset-y: -115px;
+@icon-bad-width: 40px;
+@icon-bad-height: 32px;
+@icon-bad-total-width: 212px;
+@icon-bad-total-height: 203px;
+@icon-bad-image: '../assets/icons/sprite.png';
+@icon-bad: 100px 115px -100px -115px 40px 32px 212px 203px '../assets/icons/sprite.png' 'icon-bad';
+@icon-basket-name: 'icon-basket';
+@icon-basket-x: 0px;
+@icon-basket-y: 56px;
+@icon-basket-offset-x: 0px;
+@icon-basket-offset-y: -56px;
+@icon-basket-width: 45px;
+@icon-basket-height: 49px;
+@icon-basket-total-width: 212px;
+@icon-basket-total-height: 203px;
+@icon-basket-image: '../assets/icons/sprite.png';
+@icon-basket: 0px 56px 0px -56px 45px 49px 212px 203px '../assets/icons/sprite.png' 'icon-basket';
+@icon-fb-black-name: 'icon-fb-black';
+@icon-fb-black-x: 150px;
+@icon-fb-black-y: 115px;
+@icon-fb-black-offset-x: -150px;
+@icon-fb-black-offset-y: -115px;
+@icon-fb-black-width: 13px;
+@icon-fb-black-height: 18px;
+@icon-fb-black-total-width: 212px;
+@icon-fb-black-total-height: 203px;
+@icon-fb-black-image: '../assets/icons/sprite.png';
+@icon-fb-black: 150px 115px -150px -115px 13px 18px 212px 203px '../assets/icons/sprite.png' 'icon-fb-black';
+@icon-fb-white-name: 'icon-fb-white';
+@icon-fb-white-x: 100px;
+@icon-fb-white-y: 188px;
+@icon-fb-white-offset-x: -100px;
+@icon-fb-white-offset-y: -188px;
+@icon-fb-white-width: 10px;
+@icon-fb-white-height: 15px;
+@icon-fb-white-total-width: 212px;
+@icon-fb-white-total-height: 203px;
+@icon-fb-white-image: '../assets/icons/sprite.png';
+@icon-fb-white: 100px 188px -100px -188px 10px 15px 212px 203px '../assets/icons/sprite.png' 'icon-fb-white';
+@icon-garage-name: 'icon-garage';
+@icon-garage-x: 66px;
+@icon-garage-y: 51px;
+@icon-garage-offset-x: -66px;
+@icon-garage-offset-y: -51px;
+@icon-garage-width: 46px;
+@icon-garage-height: 43px;
+@icon-garage-total-width: 212px;
+@icon-garage-total-height: 203px;
+@icon-garage-image: '../assets/icons/sprite.png';
+@icon-garage: 66px 51px -66px -51px 46px 43px 212px 203px '../assets/icons/sprite.png' 'icon-garage';
+@icon-google-black-name: 'icon-google-black';
+@icon-google-black-x: 179px;
+@icon-google-black-y: 43px;
+@icon-google-black-offset-x: -179px;
+@icon-google-black-offset-y: -43px;
+@icon-google-black-width: 27px;
+@icon-google-black-height: 18px;
+@icon-google-black-total-width: 212px;
+@icon-google-black-total-height: 203px;
+@icon-google-black-image: '../assets/icons/sprite.png';
+@icon-google-black: 179px 43px -179px -43px 27px 18px 212px 203px '../assets/icons/sprite.png' 'icon-google-black';
+@icon-hand-partner-name: 'icon-hand-partner';
+@icon-hand-partner-x: 0px;
+@icon-hand-partner-y: 165px;
+@icon-hand-partner-offset-x: 0px;
+@icon-hand-partner-offset-y: -165px;
+@icon-hand-partner-width: 20px;
+@icon-hand-partner-height: 13px;
+@icon-hand-partner-total-width: 212px;
+@icon-hand-partner-total-height: 203px;
+@icon-hand-partner-image: '../assets/icons/sprite.png';
+@icon-hand-partner: 0px 165px 0px -165px 20px 13px 212px 203px '../assets/icons/sprite.png' 'icon-hand-partner';
+@icon-houses-name: 'icon-houses';
+@icon-houses-x: 0px;
+@icon-houses-y: 0px;
+@icon-houses-offset-x: 0px;
+@icon-houses-offset-y: 0px;
+@icon-houses-width: 56px;
+@icon-houses-height: 46px;
+@icon-houses-total-width: 212px;
+@icon-houses-total-height: 203px;
+@icon-houses-image: '../assets/icons/sprite.png';
+@icon-houses: 0px 0px 0px 0px 56px 46px 212px 203px '../assets/icons/sprite.png' 'icon-houses';
+@icon-in-black-name: 'icon-in-black';
+@icon-in-black-x: 179px;
+@icon-in-black-y: 99px;
+@icon-in-black-offset-x: -179px;
+@icon-in-black-offset-y: -99px;
+@icon-in-black-width: 18px;
+@icon-in-black-height: 18px;
+@icon-in-black-total-width: 212px;
+@icon-in-black-total-height: 203px;
+@icon-in-black-image: '../assets/icons/sprite.png';
+@icon-in-black: 179px 99px -179px -99px 18px 18px 212px 203px '../assets/icons/sprite.png' 'icon-in-black';
+@icon-in-white-name: 'icon-in-white';
+@icon-in-white-x: 0px;
+@icon-in-white-y: 188px;
+@icon-in-white-offset-x: 0px;
+@icon-in-white-offset-y: -188px;
+@icon-in-white-width: 15px;
+@icon-in-white-height: 15px;
+@icon-in-white-total-width: 212px;
+@icon-in-white-total-height: 203px;
+@icon-in-white-image: '../assets/icons/sprite.png';
+@icon-in-white: 0px 188px 0px -188px 15px 15px 212px 203px '../assets/icons/sprite.png' 'icon-in-white';
+@icon-inst-white-name: 'icon-inst-white';
+@icon-inst-white-x: 25px;
+@icon-inst-white-y: 188px;
+@icon-inst-white-offset-x: -25px;
+@icon-inst-white-offset-y: -188px;
+@icon-inst-white-width: 15px;
+@icon-inst-white-height: 15px;
+@icon-inst-white-total-width: 212px;
+@icon-inst-white-total-height: 203px;
+@icon-inst-white-image: '../assets/icons/sprite.png';
+@icon-inst-white: 25px 188px -25px -188px 15px 15px 212px 203px '../assets/icons/sprite.png' 'icon-inst-white';
+@icon-key-name: 'icon-key';
+@icon-key-x: 179px;
+@icon-key-y: 0px;
+@icon-key-offset-x: -179px;
+@icon-key-offset-y: 0px;
+@icon-key-width: 33px;
+@icon-key-height: 33px;
+@icon-key-total-width: 212px;
+@icon-key-total-height: 203px;
+@icon-key-image: '../assets/icons/sprite.png';
+@icon-key: 179px 0px -179px 0px 33px 33px 212px 203px '../assets/icons/sprite.png' 'icon-key';
+@icon-pintrest-black-name: 'icon-pintrest-black';
+@icon-pintrest-black-x: 179px;
+@icon-pintrest-black-y: 71px;
+@icon-pintrest-black-offset-x: -179px;
+@icon-pintrest-black-offset-y: -71px;
+@icon-pintrest-black-width: 19px;
+@icon-pintrest-black-height: 18px;
+@icon-pintrest-black-total-width: 212px;
+@icon-pintrest-black-total-height: 203px;
+@icon-pintrest-black-image: '../assets/icons/sprite.png';
+@icon-pintrest-black: 179px 71px -179px -71px 19px 18px 212px 203px '../assets/icons/sprite.png' 'icon-pintrest-black';
+@icon-services-name: 'icon-services';
+@icon-services-x: 0px;
+@icon-services-y: 115px;
+@icon-services-offset-x: 0px;
+@icon-services-offset-y: -115px;
+@icon-services-width: 39px;
+@icon-services-height: 40px;
+@icon-services-total-width: 212px;
+@icon-services-total-height: 203px;
+@icon-services-image: '../assets/icons/sprite.png';
+@icon-services: 0px 115px 0px -115px 39px 40px 212px 203px '../assets/icons/sprite.png' 'icon-services';
+@icon-shower-name: 'icon-shower';
+@icon-shower-x: 49px;
+@icon-shower-y: 115px;
+@icon-shower-offset-x: -49px;
+@icon-shower-offset-y: -115px;
+@icon-shower-width: 41px;
+@icon-shower-height: 37px;
+@icon-shower-total-width: 212px;
+@icon-shower-total-height: 203px;
+@icon-shower-image: '../assets/icons/sprite.png';
+@icon-shower: 49px 115px -49px -115px 41px 37px 212px 203px '../assets/icons/sprite.png' 'icon-shower';
+@icon-stadium-name: 'icon-stadium';
+@icon-stadium-x: 66px;
+@icon-stadium-y: 0px;
+@icon-stadium-offset-x: -66px;
+@icon-stadium-offset-y: 0px;
+@icon-stadium-width: 52px;
+@icon-stadium-height: 41px;
+@icon-stadium-total-width: 212px;
+@icon-stadium-total-height: 203px;
+@icon-stadium-image: '../assets/icons/sprite.png';
+@icon-stadium: 66px 0px -66px 0px 52px 41px 212px 203px '../assets/icons/sprite.png' 'icon-stadium';
+@icon-tech-services-name: 'icon-tech-services';
+@icon-tech-services-x: 128px;
+@icon-tech-services-y: 0px;
+@icon-tech-services-offset-x: -128px;
+@icon-tech-services-offset-y: 0px;
+@icon-tech-services-width: 41px;
+@icon-tech-services-height: 42px;
+@icon-tech-services-total-width: 212px;
+@icon-tech-services-total-height: 203px;
+@icon-tech-services-image: '../assets/icons/sprite.png';
+@icon-tech-services: 128px 0px -128px 0px 41px 42px 212px 203px '../assets/icons/sprite.png' 'icon-tech-services';
+@icon-triangle-name: 'icon-triangle';
+@icon-triangle-x: 128px;
+@icon-triangle-y: 52px;
+@icon-triangle-offset-x: -128px;
+@icon-triangle-offset-y: -52px;
+@icon-triangle-width: 40px;
+@icon-triangle-height: 40px;
+@icon-triangle-total-width: 212px;
+@icon-triangle-total-height: 203px;
+@icon-triangle-image: '../assets/icons/sprite.png';
+@icon-triangle: 128px 52px -128px -52px 40px 40px 212px 203px '../assets/icons/sprite.png' 'icon-triangle';
+@icon-tw-black-name: 'icon-tw-black';
+@icon-tw-black-x: 179px;
+@icon-tw-black-y: 127px;
+@icon-tw-black-offset-x: -179px;
+@icon-tw-black-offset-y: -127px;
+@icon-tw-black-width: 18px;
+@icon-tw-black-height: 18px;
+@icon-tw-black-total-width: 212px;
+@icon-tw-black-total-height: 203px;
+@icon-tw-black-image: '../assets/icons/sprite.png';
+@icon-tw-black: 179px 127px -179px -127px 18px 18px 212px 203px '../assets/icons/sprite.png' 'icon-tw-black';
+@icon-tw-white-name: 'icon-tw-white';
+@icon-tw-white-x: 50px;
+@icon-tw-white-y: 188px;
+@icon-tw-white-offset-x: -50px;
+@icon-tw-white-offset-y: -188px;
+@icon-tw-white-width: 15px;
+@icon-tw-white-height: 15px;
+@icon-tw-white-total-width: 212px;
+@icon-tw-white-total-height: 203px;
+@icon-tw-white-image: '../assets/icons/sprite.png';
+@icon-tw-white: 50px 188px -50px -188px 15px 15px 212px 203px '../assets/icons/sprite.png' 'icon-tw-white';
+@icon-vimeo-white-name: 'icon-vimeo-white';
+@icon-vimeo-white-x: 75px;
+@icon-vimeo-white-y: 188px;
+@icon-vimeo-white-offset-x: -75px;
+@icon-vimeo-white-offset-y: -188px;
+@icon-vimeo-white-width: 15px;
+@icon-vimeo-white-height: 15px;
+@icon-vimeo-white-total-width: 212px;
+@icon-vimeo-white-total-height: 203px;
+@icon-vimeo-white-image: '../assets/icons/sprite.png';
+@icon-vimeo-white: 75px 188px -75px -188px 15px 15px 212px 203px '../assets/icons/sprite.png' 'icon-vimeo-white';
+@spritesheet-width: 212px;
+@spritesheet-height: 203px;
+@spritesheet-image: '../assets/icons/sprite.png';
+@spritesheet-sprites: @icon-bad @icon-basket @icon-fb-black @icon-fb-white @icon-garage @icon-google-black @icon-hand-partner @icon-houses @icon-in-black @icon-in-white @icon-inst-white @icon-key @icon-pintrest-black @icon-services @icon-shower @icon-stadium @icon-tech-services @icon-triangle @icon-tw-black @icon-tw-white @icon-vimeo-white;
+@spritesheet: 212px 203px '../assets/icons/sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  background-image: e(%('url(%a)', e(@sprite-image)));
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

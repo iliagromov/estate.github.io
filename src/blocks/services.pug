@@ -1,0 +1,15 @@
+mixin item(icon, title)
+    .services-block__item
+        .icon
+            div(class=icon)
+        h3.page__title-h3=title
+
+section.services
+    .wrapper
+        h2.page__title-h2 Our service at real state
+        p.page__text Vivamus elementum semper nisi aenean vulputate eleifend tellus aenean leo ligulal porttitor.
+        .services-block
+            +item('icon_bedrooms', '5 Bedrooms')
+            +item('icon_bathrooms', '6 Bathrooms')
+            +item('icon_garage', '4 Car Garage')
+            +item('icon_triangle', '5078 SQ.FT')

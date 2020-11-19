@@ -1,0 +1,20 @@
+extends templates/template
+
+block title
+	title Event
+block append style
+block content
+	main.page
+		include modules/header-module
+		include blocks/banner
+		include blocks/about
+		include blocks/services
+		include blocks/feature
+		include blocks/property
+		include blocks/agents
+		include blocks/testimonial
+		include blocks/form
+	include blocks/footer
+block append script
+	script(src='js/store-scroll.js')
+	script(src='js/scroll-anchors.js')
